@@ -18,6 +18,16 @@ fn main() {
         3 => println!("this is 3"),
         _ => println!("this is something else"), // underscore(_) is used to tell that everything else other than those required
     }
+
+    //Strings
+    let my_name = "Maak 47";
+    match my_name {
+        "Zacky" => println!("Not my name"),
+        "Maak 47" => println!("Thats right"),
+        "Arethee" => println!("Thats not me"
+        ),
+        _ => println!("Not even Close"),
+    }
 }
 
 // match vs else..if
