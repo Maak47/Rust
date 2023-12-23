@@ -12,12 +12,9 @@
 
 fn main() {
     let mut value = 5;
-    while value <= 5 {
+    while value >=1 {
         println!("{:?}", value);
         value -= 1;
-        if value == 0 {
-            break;
-        }
     }
     println!("done!");
 }
