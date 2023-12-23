@@ -13,9 +13,14 @@ fn main() {
     let mut value = 1;
     loop {
         println!("{:?}", value);
-        value += 1;
-        if value == 5{
+   
+        if value == 4{
             break;
         }
+        value += 1;
     }
+
+ 
+
+    
 }
