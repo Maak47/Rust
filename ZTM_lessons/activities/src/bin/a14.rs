@@ -47,7 +47,7 @@ fn main() {
     }
 }
 
-Solution from Video
+// Solution from Video
 struct Person {
     name: String,
     fav_color: String,
