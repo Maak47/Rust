@@ -48,12 +48,12 @@ fn main() {
 }
 
 // Solution from Video
-struct Person {
-    name: String,
-    fav_color: String,
-    age: i32,
+// struct Person {
+//     name: String,
+//     fav_color: String,
+//     age: i32,
 
-}
+// }
 
 // fn print(data: &str){
 //     println!("{:?}", data);
