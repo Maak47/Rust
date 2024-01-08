@@ -386,9 +386,87 @@
 
 // 17
 
-fn main () {
+// fn main () {
 
-    let string = "What the heck is that rack";
+//     let string = "What the heck is that rack";
 
-    println!("{:?}",string.to_uppercase());
-}
+//     println!("{:?}",string.to_uppercase());
+// }
+
+// 18a
+
+// struct Customer {
+//     age: i32
+// }
+
+// fn restricted_purchase(customer: &Customer) -> Result<(), String> {
+//     if customer.age < 21 {
+//         Err("Customer must be atleast 21 years old to make the purchase".to_owned())
+//     }
+//     else {
+//         Ok(())
+//     }
+// }
+
+// fn main() {
+//     let customer1 = Customer{
+//         age: 12,
+//     };
+//    let purchase = restricted_purchase(&customer1);
+
+//    println!("{:?}", purchase);
+// }
+
+// 18b
+
+// enum Position {
+//     Maintenance,
+//     Marketing,
+//     Manager,
+//     SuperVisor,
+//     KitchenStaff,
+//     Technician,
+// }
+
+// enum Status {
+//     Active,
+//     Terminated,
+// }
+
+// struct Employee {
+//     position: Position,
+//     status: Status
+// }
+
+// fn try_access(employee: &Employee) -> Result<(), String> {
+//     match employee.status {
+//         Status::Terminated => return Err("terminated".to_owned()),
+//         _ => (),
+//     }
+
+//     match employee.position{
+//         Position::Maintenance => Ok(()),
+//         Position::Manager => Ok(()),
+//         Position::Marketing => Ok(()),
+//         _ => Err("invalid position".to_owned()),
+//     }
+// }
+
+// fn print_access(employee: &Employee) -> Result<(), String> {
+//     let attempt_access =  try_access(employee)?;w
+//     println!("access ok");
+//     Ok(())
+// }
+
+// fn main() {
+//     let manager = Employee {
+//         position: Position::KitchenStaff,
+//         status: Status::Active,
+//     };
+    
+//     match print_access(&manager) {
+//         Err(e) => println!("access denied: {:?}", e),
+//         _ => (),
+//     }
+
+// }
