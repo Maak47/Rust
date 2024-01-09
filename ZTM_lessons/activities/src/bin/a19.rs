@@ -37,9 +37,10 @@ fn main() {
         // TUTOR SOLUTION
         total_stock = total_stock + qty;
         let stock_count = if qty == &0 {
-            "out of stock".to_owned()
+            // put a check here
+            "out of stock".to_owned() //value that gets alloted to the variable
         } else {
-            format!("{:?}", qty)
+            format!("{:?}", qty) //format macro works like println! but instead of displaying it, it saves the string on a variable
         };
         println!("item={:?}, stock={:?}", item, stock_count);
     }
