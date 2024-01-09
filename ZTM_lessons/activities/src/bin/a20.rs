@@ -35,7 +35,7 @@ enum PowerState {
 
 impl PowerState {
     fn print_state(state: Self) {
-        use PowerState::*;
+        use PowerState::*; //use this method with enums for writing only variants
         match state {
             Off => println!("Powering Off"),
             Shutdown => println!("Shutting Down"),
@@ -60,8 +60,10 @@ impl PowerState {
 fn main() {
     let mut buffer = String::new();
     println!("Enter new power state:");
-    let user_input_status = io::stdin().read_line(&mut buffer);
+    let user_input_status = io::stdin().read_line(&mut buffer); // io::stdin().read_linw() => read the input line on the terminal by the user
+
     if user_input_status.is_ok() {
+        // is_ok() => passes a boolean if the input is acceptable
         match PowerState::string2state(&buffer) {
             Some(state) => PowerState::print_state(state),
             None => println!("invalid power state"),
